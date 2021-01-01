@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kishorpaul</title>
+	{% include 'snippets/header.html' %}
+	{% include 'snippets/baseCSS.html' %}
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<style type="text/css">
+		.main{
+			min-height: 100vh;
+			height: 100%;
+		}
+	</style>
+	<div class="main">
+	{% block content %}
+	{% endblock content %}	
+	</div>
+	
+</body>
+	{% include 'snippets/footer.html' %}
+</html>
